@@ -1,147 +1,235 @@
-body
-{
+body {
     background-color: #303030;
-    color: white;
+    color: rgb(219, 219, 219);
+    margin: 0;
 }
-#coteiner
-{
+
+.container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;    
 }
-    #header
-    {
-        width: 90%;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 200%;
-    }
-    
-    .header
-    {
-        float: left;
-        margin: 6%;
-        margin-left: 6%;
-    }
-        #logo
-        {
-            margin-right: 10%;
-            margin-bottom: 30px;
-        }
-        #watch
-        {
-            margin-right: 10%;
-            margin-bottom: 30px;
-        }
-    .box
-    {
-        width: 50%;
-        height: 500px;
-        float: left;
-    }
-        .tile
-        {
-            width: 40%;
-            height: 24.84%;
-            margin: 3%;
-            margin-right: 3%;
-            float: right;
-            text-align: center;
-        }
-        .tile:hover{opacity: 20%;}
-        
-        #tile1{background-color: #3095d3;} #tile1:hover{background-color: #1073b1;}
-        #tile2{background-color: #FF7F50;} #tile2:hover{background-color: #dd5d30;}
-        #tile3{background-color: #93c748;} #tile3:hover{background-color: #71a527;} 
-        #tile4
-        {
-            background-color: #ee5232;
-            width: 86%;
-            margin-top: 2%;
-        }
-        #tile4:hover{background-color: #cc3010;} 
-        #tile5
-        {
-            background-color: #666666;
-            width: 86%;
-            height: 55%;
-            float: left;
-            margin-right: 30%;
-        }
-        .boxin
-        {
-            margin-top: 10%;
-        }
-        #boxinbusiness
-        {
-            margin-top: 4%;
-        }
-        .boxinsocial
-        {
-            margin-top: 30%;
-        }
-        #text
-        {
-            font-size: medium;
-            margin: 5%;
-            text-align: justify;
-            font-family: roboto;
-        }
-        #social
-        {
-            width: 70%;
-            background-color: red;
-            height: 24.84%;
-            float: left;
-            margin-right: 30%;
-        }
-        .tilesocial
-        {
-            width: 19%;
-            height: 24.84%;
-            float: left;
-            margin-left: 3%;
-            margin-top: 3%;
-            text-align: center;
-        }
-        #me       {background-color: #ffffff}  #me:hover{background-color: #eeeeee}
-        #persontest{color: black;}
-        #facebook {background-color: #4658b3;} #facebook:hover {background-color: #2436b1;}
-        #linkenin {background-color: #0077b5;} #linkenin:hover {background-color: #0055b2;}
-        #mail     {background-color: #777777;} #mail:hover     {background-color: #555555};
-    footer
-    {
-        text-align: center;
-        width: 100%;
-        float: left;
-        clear: both;
-        font-size: 65%;
-        background-color: red;
-    }
-    #textfooter
-    {
-        text-align: center;
-    }
-    .textlink:hover
-    {text-decoration: underline;}
-    
 
-/*Nieodwiedzony link*/
-a:link
-{
+header {
+    width: 90%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 200%;
+}
+
+.logo, #watch {
+    float: left;
+    margin: 2%;
+    margin-left: 6%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.logo {
+    margin-right: 10%;
+    margin-bottom: 30px;
+}
+
+#watch {
+    margin-right: 10%;
+    margin-bottom: 30px;
+    width: 200px; 
+}
+
+.tiles, .description {
+    width: 50%;
+    float: left;
+}
+.social-links {
+    width: 100%;
+}
+.tile {
+    width: 40%;
+    height: 24.84%;
+    margin: 3%;
+    margin-right: 3%;
+    float: right;
+    text-align: center;
+
+    background-color: #3095d3;
+}
+
+.tile:hover {
+    opacity: 20%;
+    background-color: #1073b1;
+}
+/*
+.tiles a:nth-child(1) .tile {
+    background-color: #3095d3;
+}
+
+.tiles a:nth-child(1) .tile:hover {
+    background-color: #1073b1;
+}
+
+.tiles a:nth-child(2) .tile {
+    background-color: #FF7F50;
+}
+
+.tiles a:nth-child(2) .tile:hover {
+    background-color: #dd5d30;
+}
+
+
+.tiles a:nth-child(3) .tile {
+    background-color: #93c748;
+}
+
+.tiles a:nth-child(3) .tile:hover {
+    background-color: #71a527;
+}
+
+.tiles a:nth-child(4) .tile {
+    background-color: #ee5232;
+}
+
+.tiles a:nth-child(4) .tile:hover {
+    background-color: #cc3010;
+}
+
+.tiles a:nth-child(5) .tile {
+    background-color: #666666;
+}
+
+.tiles a:nth-child(5) .tile:hover {
+    background-color: #676676;
+}
+*/
+
+/* Styl dla kafelka "modelowanie biznesowe" */
+.tiles a:nth-child(5) .tile {
+    width: 86%;
+}
+.tiles a:nth-child(5) .tile:hover {
+    width: 86%;
+}
+
+.boxin {
+    margin-top: 10%;
+}
+
+.boxin-business {
+    margin-top: 4%;
+}
+
+.boxin-social {
+    
+}
+
+.text {
+    font-size: medium;
+    margin: 5%;
+    text-align: justify;
+    font-family: roboto;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: flex-end; 
+    margin: 2%;
+}
+
+.profile-photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.tile-social {
+    width: 15%;
+    height: 120px;
+    float: left;
+    display: flex; /* Ustawia kontener jako flexbox */
+    justify-content: center; /* Wyśrodkowuje zawartość w poziomie */
+    align-items: center; /* Wyśrodkowuje zawartość w pionie */
+    margin: 4%;
+}
+
+.tile-social#me {
+    background-color: #ffffff;
+}
+
+.tile-social#me:hover {
+    background-color: #eeeeee;
+}
+
+.person-test {
+    color: black;
+}
+
+.tile-social#facebook {
+    background-color: #4658b3;
+}
+
+.tile-social#facebook:hover {
+    background-color: #2436b1;
+}
+
+.tile-social#linkedin {
+    background-color: #0077b5;
+}
+
+.tile-social#linkedin:hover {
+    background-color: #0055b2;
+}
+
+.tile-social#mail {
+    background-color: #777777;
+}
+
+.tile-social#mail:hover {
+    background-color: #555555;
+}
+
+.tile {
+    width: 40%;
+    height: 24.84%;
+    margin: 3%;
+    margin-right: 3%;
+    float: right;
+    text-align: center;
+}
+
+
+.tile-business-model:hover {
+    background-color: #cc3010;
+}
+
+
+footer {
+    text-align: center;
+    width: 100%;
+    float: left;
+    clear: both;
+    font-size: 65%;
+    background-color: rgb(5, 0, 32);
+}
+
+.text-footer {
+    text-align: center;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+/* Nieodwiedzony link */
+a:link {
     color: white;
     text-decoration: none;
 }
-/*Odwiedzony link*/
-a:visited
-{
+
+/* Odwiedzony link */
+a:visited {
     color: white;
-    text-decoration: none
-}
-/*link po najechaniu kursorem*/
-a:hover
-{
-    color: white;
+    text-decoration: none;
 }
 
-
-    
+/* Link po najechaniu kursorem */
+a:hover {
+    color: white;
+}
