@@ -1,3 +1,21 @@
+/* MAIN CSS FILE
+Table of contents:
+ - grinds;
+ - margins;
+ - centring;
+ - blocking;
+-  a: behavior.
+
+animations.css
+- animations;
+- hover animations;
+- JS.
+
+Rules:
+- from up to down
+- from bigest to lower
+ */
+
 body {
     background-color: #303030;
     color: rgb(219, 219, 219);
@@ -16,6 +34,8 @@ body {
     grid-template-rows: repeat(8, 1fr);
 }
 
+
+/* HEADER */
 header {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 200%;
@@ -52,8 +72,10 @@ header {
     border-radius: 50%;
 }
 
+
+
+/* MAIN */
 main {
-    max-width: 1500px;  
     grid-column: 2/8;
     grid-row: 3/7;
     display: grid;
@@ -61,6 +83,8 @@ main {
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 30px;
 }
+
+/* tiles */
 
 .tiles {
     grid-column: 1/5;
@@ -115,10 +139,8 @@ main {
     width: 100%;
 }
 
-.tile:hover {
-    opacity: 20%;
-    background-color: #1073b1;
-}
+
+/* DESCRIPTION */
 
 .description {
     grid-column: 5/9;
@@ -150,6 +172,7 @@ main {
     height: 90%;
 }
 
+/* tile social media */
 .tile-social {
     display: flex; /* Ustawia kontener jako flexbox */
     justify-content: center; /* Wyśrodkowuje zawartość w poziomie */
@@ -162,26 +185,10 @@ main {
     background-color: #ffffff;
 }
 
-.tile-social#me:hover {
-    grid-column: 1;
-    grid-row: 3;
-    background-color: #eeeeee;
-}
-
-.person-test {
-    color: black;
-}
-
 .tile-social#facebook {
     grid-column: 2;
     grid-row: 3;
     background-color: #4658b3;
-}
-
-.tile-social#facebook:hover {
-    grid-column: 2;
-    grid-row: 3;
-    background-color: #2436b1;
 }
 
 .tile-social#linkedin {
@@ -190,22 +197,10 @@ main {
     background-color: #0077b5;
 }
 
-.tile-social#linkedin:hover {
-    grid-column: 3;
-    grid-row: 3;
-    background-color: #0055b2;
-}
-
 .tile-social#mail {
     grid-column: 4;
     grid-row: 3;
     background-color: #777777;
-}
-
-.tile-social#mail:hover {
-    grid-column: 4;
-    grid-row: 3;
-    background-color: #555555;
 }
 
 .boxin-social * {
@@ -230,23 +225,19 @@ footer {
     text-align: center;
 }
 
-.text-link:hover {
-    text-decoration: underline;
-}
-
-/* Nieodwiedzony link */
+/* unvisited link */
 a:link {
     color: white;
     text-decoration: none;
 }
 
-/* Odwiedzony link */
+/* visited link */
 a:visited {
     color: white;
     text-decoration: none;
 }
 
-/* Link po najechaniu kursorem */
+/* hover */
 a:hover {
     color: white;
     cursor: pointer;
