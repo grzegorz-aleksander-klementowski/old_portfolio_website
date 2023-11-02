@@ -1,8 +1,7 @@
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 900px) {
 
     .container {
         width: 100%;
-        height: 4000px;
         margin-right: auto;
         margin-left: auto;
         display: grid;
@@ -104,3 +103,18 @@
     }
 
 }
+
+
+@media (min-width: 900px) and (max-height: 700px) {
+    body {
+        .container {
+            width: 100%;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            column-gap: 20px;   
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(14, 150px);
+        }
+    }
+  }
