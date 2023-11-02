@@ -63,7 +63,6 @@
         grid-row: 1/4;
         display: grid;
     
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: 200px repeat(3, 1fr);
         grid-gap: 15px;
@@ -78,13 +77,12 @@
     }
 
     .text {
-
+        font-size: 200%;
         grid-column: 1/5;
         grid-row: 1 / 4;
         font-size: medium;
         text-align: justify;
         font-family: roboto;
-        font-size: 150%;
         background-color: #777777;
     
         display: flex;
@@ -92,7 +90,11 @@
         align-items: center;
     }
 
-    .tiles {
+    .text > p {
+        font-size: 150%;
+    }
+
+    .tiles {     
         grid-column: 1/5;
         grid-row: 4/7;
         display: grid;
