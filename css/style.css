@@ -234,7 +234,6 @@ main {
 footer {
     text-align: center;
     font-size: 0.7em;
-    background-color: rgb(36, 36, 36);
     grid-column: 1/4;
     grid-row: 3;
     align-self: end; 

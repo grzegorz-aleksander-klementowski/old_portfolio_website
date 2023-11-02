@@ -53,6 +53,12 @@
     }
 }
 
+.animate {
+    animation-name: tileAppear;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+}
+
 .tiles a, .description * {
     animation-name: tileAppear;
     animation-duration: 0.5s; 
@@ -99,3 +105,13 @@
     animation-delay: 1.3s; 
 }
 
+#cursor {
+    
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Upewnij się, że kursor nie blokuje innych elementów */
+    /* transition: transform 0.15s ease-in-out; Opcjonalne: dodaj animację dla płynniejszego ruchu */
+    z-index: 9999; /* Upewnij się, że element cursor jest na wierzchu */
+    border-radius: 50%; /* Okrągły kształt */
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.5); /* Dodaj cień */
+}
