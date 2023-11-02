@@ -1,18 +1,12 @@
 @media screen and (max-width: 1080px) {
 
     .container {
-        width: 100%;
-        margin-right: auto;
-        margin-left: auto;
-        display: grid;
         column-gap: 20px;   
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: r1f 80% 1fr;
+        grid-template-columns: 1fr;
     }
 
     header {
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 125%;
         grid-column: 1;
         grid-row: 1;
         align-items: center;
@@ -31,13 +25,12 @@
     
     #watch {
         width: 200px;
-        grid-column: 2/5;
+        grid-column: 3/5;
         grid-row: 1;
-    }, Siedemdziesiąt Cztery, Siedemdziesiąt Pięć, Siedemdziesiąt Sześć, Siedemdziesiąt Siedem, Siede
-    
+    }
     .profile-photo {
-        grid-column: 2/5;
-        grid-row: 2;
+        grid-column: 4;
+        grid-row: 1/3;
     }
 
 
