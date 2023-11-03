@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 2;
+        font-size: 2em;
         padding: 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -83,7 +83,7 @@
     }
 
     .text > p {
-        font-size: 2;
+        font-size: 2em;
     }
 
     .tiles {     
