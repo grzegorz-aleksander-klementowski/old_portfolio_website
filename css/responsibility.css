@@ -1,13 +1,12 @@
 @media screen and (max-width: 1000px) {
 
     .container {
-        gap: 10px;   
+        gap: 20px;   
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 40px;
+        grid-template-rows: 10vh 3fr 40px;
     }
 
     header {
-        max-height: 8vh;
         font-family: 'Josefin Sans', sans-serif;
         grid-column: 1;
         grid-row: 1;
@@ -15,7 +14,7 @@
         justify-content: center;
         text-align: center;
         font-size: 2em;
-        padding: 10px;
+        padding: 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -74,7 +73,6 @@
     .text {
         grid-column: 1/5;
         grid-row: 1 / 5;
-        font-size: medium;
         text-align: justify;
         font-family: roboto;
         background-color: #777777;
@@ -85,6 +83,7 @@
     }
 
     .text > p {
+        height: 700px;
         font-size: 2em;
     }
 
@@ -97,7 +96,9 @@
         grid-gap: 15px;
     }
 
-    
+    .tile {
+        font-size: 1.3em;
+    }
 
     footer {
         text-align: center;
