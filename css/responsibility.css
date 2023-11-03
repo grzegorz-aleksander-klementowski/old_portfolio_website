@@ -3,7 +3,7 @@
     .container {
         gap: 20px;   
         grid-template-columns: 1fr;
-        grid-template-rows: 10vh 3fr 40px;
+        grid-template-rows: 1fr 3fr 1fr;
     }
 
     header {
@@ -97,7 +97,7 @@
     }
 
     .tile {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     footer {
